@@ -1,0 +1,271 @@
+footer {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+}
+
+#footer-top {
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    padding: 50px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#footer-top-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#footer-top-left-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+#footer-top-left-top #footer-brands {
+    box-sizing: border-box;
+    margin-right: 20px;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 235, 59, 0.7);
+    text-shadow: 0 0 20px rgba(255, 235, 59, 0.7);
+}
+
+#footer-top-left-top #footer-logo {
+    box-sizing: border-box;
+    margin: 0 20px;
+}
+
+footer img {
+    width: 80px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 235, 59, 0.5)) sepia(1) saturate(6) hue-rotate(-20deg) brightness(0.9);
+}
+
+#footer-top-left-top #footer-creators {
+    box-sizing: border-box;
+    margin-left: 20px;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 235, 59, 0.7);
+    text-shadow: 0 0 20px rgba(255, 235, 59, 0.7);
+}
+
+#footer-top-left-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+}
+
+#footer-top-left-bottom span {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'Montserrat', cursive;
+    color: rgba(204, 198, 192, 1);
+}
+
+#footer-top-left-bottom span:first-child {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: 500;
+    color: rgba(255, 235, 59, 0.7);
+    text-shadow: 0 0 20px rgba(255, 235, 59, 0.7);
+}
+
+#footer-schedule-a-meet {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+#footer-schedule-a-meet button {
+    font-size: 12px;
+    line-height: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 235, 59, 0.9);
+    text-shadow: 0 0 20px rgba(255, 235, 59, 0.7);
+    border: 1px solid rgba(255, 235, 59, 0.9);
+}
+
+#footer-schedule-a-meet a {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(204, 198, 192, 1);
+}
+
+#footer-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#footer-links #footer-quick-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#footer-quick-links span {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 235, 59, 0.7);
+    text-shadow: 0 0 20px rgba(255, 235, 59, 0.7);
+    margin-bottom: 10px;
+}
+
+#footer-quick-links a {
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(204, 198, 192, 1);
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+#footer-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+#footer-socials a {
+    color: rgba(255, 235, 59, 0.7);
+    text-shadow: 0 0 20px rgba(255, 235, 59, 0.7);
+    font-size: 30px;
+    line-height: 30px;
+}
+
+#footer-newsletters {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#footer-newsletters-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgba(255, 235, 59, 0.9);
+    text-shadow: 0 0 20px rgba(255, 235, 59, 0.7);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 16px;
+    word-wrap: normal;
+}
+
+#footer-newsletters-form {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#footer-newsletters-form form {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#footer-newsletters-form input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid rgba(255, 235, 59, 0.9);
+    border-radius: 5px;
+    outline: none;
+    background: rgba(0, 0, 0, 0.8);
+    color: rgba(204, 198, 192, 1);
+    font-size: 14px;
+    line-height: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#footer-newsletters-form label {
+    position: absolute;
+    top: 12px;
+    left: calc(6% + 10px);
+    font-size: 14px;
+    line-height: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(204, 198, 192, 1);
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+    padding: 0px 10px;
+}
+
+#footer-newsletters-form input:focus + label, #footer-newsletters-form input:not(:placeholder-shown) + label {
+    top: -8px;
+    left: calc(6% + 10px);
+    font-size: 12px;
+    line-height: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 235, 59, 0.9);
+    text-shadow: 0 0 20px rgba(255, 235, 59, 0.3);
+    background: rgba(0, 0, 0, 1);
+    transition: all 0.3s ease;
+}
+
+#footer-newsletters-form button {
+    font-size: 12px;
+    line-height: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 235, 59, 0.9);
+    text-shadow: 0 0 20px rgba(255, 235, 59, 0.7);
+    border: 1px solid rgba(255, 235, 59, 0.9);
+}
+
+#footer-bottom {
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+}
+
+footer p {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 14px;
+    color: rgba(255, 235, 59, 0.7);
+    text-align: center;
+    border-top: 1px solid rgba(255, 235, 59, 0.7);
+    background: #000;
+}
