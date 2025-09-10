@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css'>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.10/dist/lenis.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/marquee.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.10/dist/lenis.css">
     <!-- icon for page -->
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <title>OPC | Home</title>
@@ -21,18 +20,18 @@
      <header>
         <nav>
             <div id="brands">
-                <a href="#">BRANDS</a>
+                <a href="./brands.html">BRANDS</a>
             </div>
             <div id="event-partner">
-                <a href="#">EVENT PARTNERS</a>
+                <a href="./event-partners.html">EVENT PARTNERS</a>
             </div>
             <div id="logo">
-                <a href="#">
+                <a href="./index.html">
                     <img src="./assets/images/logo.png" alt="OPC Logo" />
                 </a>
             </div>
             <div id="creators">
-                <a href="#">CREATORS</a>
+                <a href="./creators.html">CREATORS</a>
             </div>
             <div id="sign-in">
                 <button type="button">SIGN IN <i class='bx  bx-arrow-right-stroke'  ></i></button>
@@ -72,7 +71,7 @@
                         <div class="line"></div>
                         <div id="buttons">
                             <button type="button">SCHEDULE A MEET <i class='bx  bx-arrow-right-stroke'  ></i></button>
-                            <button type="button">KNOW MORE <i class='bx  bx-arrow-right-stroke'  ></i></button>
+                            <button type="button" id="know-more-btn">KNOW MORE <i class='bx  bx-arrow-right-stroke'  ></i></button>
                         </div>
                     </div>
                 </div>
@@ -135,9 +134,9 @@
                         </div>
                         <div class="description">
                             <span>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, perferendis, delectus molestiae sapiente magni provident veritatis accusamus iure quia alias quae natus dignissimos nisi necessitatibus ratione illum excepturi impedit rem!
+                                Connecting Your Brand with the Right Voices.
                             </span>
-                            <button type="button">EXPLORE <i class='bx  bx-arrow-right-stroke'  ></i></button>
+                            <button type="button" id="explore-brands-btn">EXPLORE <i class='bx  bx-arrow-right-stroke'  ></i></button>
                         </div>
                     </div>
                 </div>
@@ -151,9 +150,9 @@
                         </div>
                         <div class="description">
                             <span>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, perferendis, delectus molestiae sapiente magni provident veritatis accusamus iure quia alias quae natus dignissimos nisi necessitatibus ratione illum excepturi impedit rem!
+                                Powering Partnerships. Amplifying Impact.
                             </span>
-                            <button type="button">EXPLORE <i class='bx  bx-arrow-right-stroke'  ></i></button>
+                            <button type="button" id="explore-events-btn">EXPLORE <i class='bx  bx-arrow-right-stroke'  ></i></button>
                         </div>
                     </div>
                 </div>
@@ -173,9 +172,9 @@
                         </div>
                         <div class="description">
                             <span>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, perferendis, delectus molestiae sapiente magni provident veritatis accusamus iure quia alias quae natus dignissimos nisi necessitatibus ratione illum excepturi impedit rem!
+                                Empowering Creators. Building Partnerships. Driving Growth.
                             </span>
-                            <button type="button">EXPLORE <i class='bx  bx-arrow-right-stroke'  ></i></button>
+                            <button type="button" id="explore-creators-btn">EXPLORE <i class='bx  bx-arrow-right-stroke'  ></i></button>
                         </div>
                     </div>
                 </div>
@@ -579,11 +578,11 @@
             <div id="footer-links">
                 <div id="footer-quick-links">
                     <span>QUICK LINKS</span>
-                    <a href="#">Home</a>
-                    <a href="#">Brands</a>
-                    <a href="#">Event Partners</a>
-                    <a href="#">Creators</a>
-                    <a href="#">Contact Us</a>
+                    <a href="index.html">Home</a>
+                    <a href="brands.html">Brands</a>
+                    <a href="event-partners.html">Event Partners</a>
+                    <a href="creators.html">Creators</a>
+                    <a href="contact.html">Contact Us</a>
                     <div id="footer-socials">
                         <a href="#"><i class='bxl  bx-instagram'  ></i></a>
                         <a href="#"><i class='bxl  bx-facebook'  ></i></a>
@@ -611,7 +610,7 @@
     <!-- Footer Section End -->
 
     <script src="https://unpkg.com/lenis@1.3.10/dist/lenis.min.js"></script> 
-    <script src="./assets/js/style.js"></script>
+    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/faq.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>

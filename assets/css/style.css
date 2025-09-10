@@ -16,6 +16,7 @@ body {
     background: #0d0d0d;
     font-family: 'Montserrat', sans-serif;
     overscroll-behavior: none;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -27,7 +28,6 @@ button {
     color: rgba(255, 235, 59, 0.7);
     text-shadow: 0 0 1.25rem rgba(255, 235, 59, 0.5);
     border: 0.0625rem solid rgba(255, 235, 59, 0.7);
-    border-radius: 0.1875rem;
     outline: none;
     padding: 0.9375rem 1.25rem; /* 15px 20px -> rem */
     cursor: pointer;

@@ -377,7 +377,7 @@
     color: rgba(255, 238, 88, 0.7);
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem; /* 40px */
-    line-height: 2.625rem; /* 42px */
+    line-height: 2.5rem; /* 40px */
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -388,14 +388,14 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 5rem;
 }
 
 #intro-section .intro-content .intro-text .intro-text-description .description span {
     color: rgba(204, 198, 192, 0.9);
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem; /* 16px */
-    line-height: 1.5rem; /* 24px */
+    font-size: 1.5rem; /* 16px */
+    line-height: 2rem; /* 24px */
 }
 
 .horr-line {
