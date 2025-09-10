@@ -74,7 +74,7 @@ footer img {
     box-sizing: border-box;
     font-size: 1rem; /* 16px */
     line-height: 1rem; /* 16px */
-    font-family: 'Montserrat', cursive;
+    font-family: 'Montserrat', sans-serif;
     color: rgba(204, 198, 192, 1);
 }
 
