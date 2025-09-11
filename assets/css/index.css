@@ -176,11 +176,9 @@
 }
 
 #hero-left-bottom #main-links #buttons button {
-    color: rgba(255, 235, 59, 0.7);
     font-family: 'Montserrat', sans-serif;
     font-size: 0.75rem; /* 12px */
     line-height: 0.9375rem; /* 15px */
-    font-weight: 500;
 }
 
 #hero-middle {
@@ -447,6 +445,22 @@
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
+    transition: all 5s ease-in-out;
+}
+
+#faq-type-selector div:hover {
+    text-shadow: 0 0 1rem rgba(255, 238, 88, 0.1); /* 16px -> rem */
+    color: rgba(255, 238, 88, 0.5);
+    cursor: pointer;
+    width: max-content;
+    gap: 1.5rem;
+}
+
+#faq-type-selector .selected {
+    color: rgba(255, 238, 88, 0.8);
+    text-shadow: 0 0 1.25rem rgba(255, 238, 88, 0.1); /* 20px -> rem */
+    gap: 1.5rem;
+    cursor: default;
 }
 
 #faq-type-selector div {

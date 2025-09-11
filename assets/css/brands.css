@@ -113,7 +113,6 @@
 }
 
 #br-hero-left-bottom-btns a {
-    border-bottom: 1px solid rgba(204, 198, 192, 1);
     color: rgba(204, 198, 192, 1);
 }
 
@@ -362,7 +361,7 @@
     height: 100svh;
     padding: 0 10%;
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
     font-family: 'Montserrat', sans-serif;
     color: rgba(255, 255, 255, 0.8);
     text-align: center;
@@ -372,25 +371,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
     backdrop-filter: blur(0.5rem);
     background: rgba(0, 0, 0, 0.5);
-    font-weight: 500;
 }
 
-#br-conclusion-content span span:nth-child(1) {
+#br-conclusion-content span:nth-child(1) {
+    width: 100%;
     color: rgba(255, 235, 59, 0.9);
     font-size: 2.5rem;
     line-height: 3rem;
     font-family: 'Montserrat', sans-serif;
     word-spacing: 0.1rem;
-    font-weight: 500;
 }
 
-#br-conclusion-content span span:nth-child(2) {
+#br-conclusion-content span:nth-child(2), #br-conclusion-content span:nth-child(3) {
+    width: 100%;
     font-size: 2.5rem;
     line-height: 3rem;
     font-family: 'Montserrat', sans-serif;
     word-spacing: 0.1rem;
-    font-weight: 500;
-    text-decoration: underline;
+}
+
+#br-conclusion-content span:nth-child(3) {
+    width: max-content;
+    border-bottom: 1px solid rgba(255, 235, 59, 0.8);
 }
