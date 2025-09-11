@@ -20,5 +20,9 @@ faqSectionLinks.forEach(link => {
             section.classList.add('hidden');
         }
         item.classList.remove('hidden');
+        for (const link of faqSectionLinks) {
+            link.classList.remove('selected');
+        }
+        link.classList.add('selected');
     });
 });
