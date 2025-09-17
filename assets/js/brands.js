@@ -7,3 +7,16 @@ const swiper = new Swiper('.swiper-container', {
         prevEl: '.scroll-left',
     },
 });
+
+function addParallaxEffect(element, intensity) {
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        const offset = scrollY * intensity;
+        element.style.transform = `translateY(${offset}px)`;
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const parallaxElement = document.querySelector('#br-hero-right img');
+    addParallaxEffect(parallaxElement, 0.15);
+});

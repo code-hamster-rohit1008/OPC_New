@@ -261,6 +261,5 @@ footer p {
     font-size: 0.875rem; /* 14px */
     color: rgba(255, 235, 59, 0.7);
     text-align: center;
-    border-top: 1px solid rgba(255, 235, 59, 0.3);
     background: #000;
 }
