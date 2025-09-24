@@ -50,3 +50,13 @@ if (ecBtn) {
         reRoute("creators.html");
     });
 }
+
+const lagEl = document.querySelectorAll('.lagElement');
+  const lagFactor = 0.1; // smaller = more delay
+
+  window.addEventListener('scroll', () => {
+    const offset = window.scrollY * lagFactor;
+    lagEl.forEach(el => {
+      el.style.transform = `translateY(${offset}px)`;
+    });
+  });
