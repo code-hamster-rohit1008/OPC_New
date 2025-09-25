@@ -10,6 +10,7 @@ const swiper = new Swiper('.swiper-container', {
 
 function addParallaxEffect(element, intensity) {
     const initialTop = element.getBoundingClientRect().top + window.scrollY;
+    element.style.transform = (window.scrollY - initialTop) * intensity;
 
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
