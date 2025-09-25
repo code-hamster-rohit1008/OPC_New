@@ -183,7 +183,6 @@
 
 #br-main-content-title span:nth-child(2) a {
     color: rgba(255, 235, 59, 0.8);
-    text-decoration: underline;
 }
 
 .swiper-container {
@@ -396,7 +395,7 @@
 #br-conclusion-content span:nth-child(1) {
     width: 100%;
     color: rgba(255, 235, 59, 0.9);
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 3rem;
     font-family: 'Montserrat', sans-serif;
     word-spacing: 0.1rem;
@@ -404,7 +403,7 @@
 
 #br-conclusion-content span:nth-child(2), #br-conclusion-content span:nth-child(3) {
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 3rem;
     font-family: 'Montserrat', sans-serif;
     word-spacing: 0.1rem;
