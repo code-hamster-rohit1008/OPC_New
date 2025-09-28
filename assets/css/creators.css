@@ -217,6 +217,7 @@
 .cr-card-image img {
     width: 100%;
     border-radius: 2rem;
+    filter: brightness(0.8);
 }
 
 .cr-card-text {
@@ -309,7 +310,7 @@
 }
 
 #cr-requirements-content span:nth-child(2) span {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 1.5rem;
     line-height: 2rem;
     font-family: 'Montserrat', sans-serif;
@@ -330,13 +331,28 @@
 #cr-requirements-list div {
     padding: 1.5rem 3rem;
     font-size: 1rem;
+    font-weight: 500;
     line-height: 1rem;
     font-family: 'Montserrat', sans-serif;
-    color: rgba(255, 255, 255, 1);
-    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
     box-sizing: border-box;
     background: rgba(0, 0, 0, 1);
     border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+#cr-requirements-list div:hover {
+    color: rgba(0, 0, 0, 1);
+    background: rgba(255, 235, 59, 0.5);
+}
+
+#cr-requirements-list div i {
+    font-size: 2rem;
 }
 
 #cr-many-more {
