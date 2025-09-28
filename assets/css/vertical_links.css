@@ -21,7 +21,7 @@
     right: 0;
     transform: translateY(-50%);
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     background-color: rgba(0, 0, 0, 1);
     padding: 1rem;
@@ -42,11 +42,15 @@
     border-bottom: 1px solid rgba(255, 235, 59, 0.25);
 }
 
+#left-fixed-links span:first-child {
+    transform: rotate(180deg);
+}
+
 #left-fixed-links span:hover, #right-fixed-links span:hover {
     color: rgba(255, 235, 59, 0.9);
     cursor: pointer;
 }
 
-#left-fixed-links span:first-child, #right-fixed-links span:first-child {
+#left-fixed-links span:first-child, #right-fixed-links span:last-child {
     border-bottom: none;
 }
