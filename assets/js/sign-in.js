@@ -1,4 +1,4 @@
-const CLIENT_ID = '828246651523-ulnokv5h94loanmj3pd8t8ud6kc72ov5.apps.googleusercontent.com';
+// const OUR_CLIENT_ID = '828246651523-ulnokv5h94loanmj3pd8t8ud6kc72ov5.apps.googleusercontent.com';
 
 function parseJwt(token) {
     // lightweight JWT decode (no verification) — ok for display in dev only
@@ -44,7 +44,7 @@ showPasswordCheckbox.addEventListener('click', () => {
     showPasswordCheckbox.classList = passwordInput.type === 'password' ? 'bx  bx-eye' : 'bx  bx-eye-slash';
 });
 
-const signInScheduleMeetBtn = document.getElementById('sign-in-schedule-meet-btn');
+const signInScheduleMeetBtn = document.getElementById('sign-in-schedule-a-meet-btn');
 signInScheduleMeetBtn.addEventListener('click', () => {
     window.location.href = 'schedule-a-meet.html';
 });
