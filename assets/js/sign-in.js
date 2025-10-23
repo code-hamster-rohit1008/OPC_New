@@ -1,4 +1,4 @@
-// const OUR_CLIENT_ID = '828246651523-ulnokv5h94loanmj3pd8t8ud6kc72ov5.apps.googleusercontent.com';
+const OUR_CLIENT_ID = '828246651523-ulnokv5h94loanmj3pd8t8ud6kc72ov5.apps.googleusercontent.com';
 
 function parseJwt(token) {
     // lightweight JWT decode (no verification) — ok for display in dev only
@@ -22,7 +22,7 @@ window.onload = () => {
 
     // Initialize Google Sign-In
     google.accounts.id.initialize({
-        client_id: CLIENT_ID,
+        client_id: OUR_CLIENT_ID,
         callback: handleCredentialResponse
     });
     // Render the button
