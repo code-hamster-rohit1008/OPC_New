@@ -5,21 +5,28 @@ function reRoute(to) {
 const br = document.getElementById("hero-left-top-right");
 if (br) {
     br.addEventListener("click", function() {
-        reRoute("brands.html");
+        reRoute("index.html#brands-intro");
     });
 }
 
 const cr = document.getElementById("hero-right-top");
 if (cr) {
     cr.addEventListener("click", function() {
-        reRoute("creators.html");
+        reRoute("index.html#creators-intro");
     });
 }
 
 const er = document.getElementById("hero-middle");
 if (er) {
     er.addEventListener("click", function() {
-        reRoute("event-partners.html");
+        reRoute("index.html#event-partners-intro");
+    });
+}
+
+const schdBtn = document.getElementById("schedule-meet-btn");
+if (schdBtn) {
+    schdBtn.addEventListener("click", function() {
+        reRoute("schedule-a-meet.html");
     });
 }
 

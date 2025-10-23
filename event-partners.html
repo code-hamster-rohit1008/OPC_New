@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./assets/css/vertical_links.css">
     <link rel="stylesheet" href="./assets/css/marquee.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <!-- icon for page -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicons/favicon.ico">
     <title>OPC | Event Partners</title>
 </head>
 <body>
@@ -43,16 +45,16 @@
 
     <!-- Left Email Div Start -->
      <div id="left-fixed-links">
-        <span>CONTACT US</span>
-        <span><i class='bx  bx-mail-open'  ></i> </span>
+        <span id="contact">CONTACT US</span>
+        <span id="mail-id"><i class='bx  bx-mail-open'  ></i></span>
      </div>
     <!-- Left Email Div End -->
 
     <!-- Right Socials Div Start -->
      <div id="right-fixed-links">
-        <span><i class='bxl  bx-instagram'  ></i></span>
-        <span><i class='bxl  bx-facebook'  ></i></span>
-        <span><i class='bxl  bx-twitter-x'  ></i></span>
+        <span id="social-instagram"><i class='bxl  bx-instagram'  ></i></span>
+        <span id="social-facebook"><i class='bxl  bx-facebook'  ></i></span>
+        <span id="social-twitter"><i class='bxl  bx-twitter-x'  ></i></span>
      </div>
     <!-- Right Socials Div End -->
 
@@ -78,8 +80,8 @@
                     At OPC, we believe sponsors & partners are the backbone of impactful experiences in any event, enhancing engagement while earning visibility, credibility, and trust with targeted audiences.
                 </div>
                 <div id="ep-hero-left-bottom-btns">
-                    <button type="button">SCHEDULE A MEET <i class='bx  bx-arrow-right-stroke'  ></i></button>
-                    <a href="#">OUR TERMS & CONDITIONS</a>
+                    <button type="button" id="ep-hero-schedule-a-meet-btn">SCHEDULE A MEET <i class='bx  bx-arrow-right-stroke'  ></i></button>
+                    <a href="./terms-and-conditions.html">OUR TERMS & CONDITIONS</a>
                 </div>
             </div>
         </div>
@@ -178,10 +180,10 @@
                     <div id="ep-corporate-sponsors-description">If you are a corporate or a startup, we have many event opportunities for you to sponsor, that can help in brand building and marketing.</div>
                     <div id="ep-corporate-sponsors-contact">Want to sponsor upcoming events? Contact Us!</div>
                     <div id="ep-corporate-sponsors-btns">
-                        <button type="button">
+                        <button type="button" id="ep-corporate-sponsors-schedule-a-meet-btn">
                             SCHEDULE A MEET <i class='bx  bx-arrow-right-stroke'  ></i>
                         </button>
-                        <button>
+                        <button type="button" id="ep-corporate-sponsors-register-updates-btn">
                             REGISTER FOR REGULAR UPDATES <i class='bx  bx-arrow-right-stroke'  ></i>
                         </button>
                     </div>
@@ -198,7 +200,7 @@
             <div id="ep-event-registration-text">
                 <span id="ep-event-registration-title">Looking for sponsors for your event?</span>
                 <span id="ep-event-registration-description">We can help you find the right sponsors to make your event a success. Register your event with us and get access to a wide range of sponsors who are looking for opportunities to showcase their brand.</span>
-                <button type="button">REGISTER YOUR EVENT <i class='bx  bx-arrow-right-stroke'  ></i></button>
+                <button type="button" id="event-register-btn">REGISTER YOUR EVENT <i class='bx  bx-arrow-right-stroke'  ></i></button>
             </div>
         </section>
      </section>
@@ -269,8 +271,8 @@
                     <span>Where creators and brands collaborate, not just connect!</span>
                 </div>
                 <div id="footer-schedule-a-meet">
-                    <button><span>SCHEDULE A MEET</span><i class='bx  bx-arrow-right-stroke'  ></i></button>
-                    <a href="#">OUR TERMS & CONDITIONS</a>
+                    <button id="footer-schedule-a-meet-btn">SCHEDULE A MEET <i class='bx  bx-arrow-right-stroke'  ></i></button>
+                    <a href="./terms-and-conditions.html">OUR TERMS & CONDITIONS</a>
                 </div>
             </div>
             <div id="footer-links">
@@ -282,9 +284,9 @@
                     <a href="creators.html">Creators</a>
                     <a href="contact.html">Contact Us</a>
                     <div id="footer-socials">
-                        <a href="#"><i class='bxl  bx-instagram'  ></i></a>
-                        <a href="#"><i class='bxl  bx-facebook'  ></i></a>
-                        <a href="#"><i class='bxl  bx-twitter-x'  ></i></a>
+                        <a href="https://www.instagram.com/owncollab/"><i class='bxl  bx-instagram'  ></i></a>
+                        <a href="https://www.facebook.com/owncollab/"><i class='bxl  bx-facebook'  ></i></a>
+                        <a href="https://www.twitter.com/owncollab/"><i class='bxl  bx-twitter-x'  ></i></a>
                     </div>
                 </div>
             </div>
@@ -310,6 +312,9 @@
     <script src="https://unpkg.com/lenis@1.3.10/dist/lenis.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/vertical-links.js"></script>
     <script src="./assets/js/event_partners.js"></script>
+    <script src="./assets/js/footer.js"></script>
 </body>
 </html>

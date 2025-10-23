@@ -20,3 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const parallaxElement = document.querySelector('#br-hero-right img');
     addParallaxEffect(parallaxElement, 0.15);
 });
+
+const brandsScheduleBtn = document.getElementById('brands-schedule-a-meet-btn');
+brandsScheduleBtn.addEventListener('click', () => {
+    window.location.href = 'schedule-a-meet.html';
+});
