@@ -23,3 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const parallaxElement = document.querySelector('#cr-hero-right img');
     addParallaxEffect(parallaxElement, 0.15);
 });
+
+const creatorsScheduleBtn = document.getElementById('creators-schedule-a-meet-btn');
+creatorsScheduleBtn.addEventListener('click', () => {
+    window.location.href = 'schedule-a-meet.html';
+});
