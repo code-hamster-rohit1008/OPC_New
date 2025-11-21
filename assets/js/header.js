@@ -1,89 +1,78 @@
-const signInButton = document.getElementById("sign-in");
-const signInComponent = document.getElementById("sign-in-component");
-const closeSignIn = document.getElementById("close-sign-in");
-const signUpButton = document.getElementById("sign-up");
-const signUpComponent = document.getElementById("sign-up-component");
-const closeSignUp = document.getElementById("close-sign-up");
-const signInAgainButton = document.getElementById("sign-in-again");
-const CLIENT_ID = '828246651523-ulnokv5h94loanmj3pd8t8ud6kc72ov5.apps.googleusercontent.com';
+const signInButton = document.querySelector("#sign-in button");
+signInButton.addEventListener("click", () => {
+    window.location.href = 'sign-in.html';
+});
 
-function parseJwt(token) {
-    // lightweight JWT decode (no verification) — ok for display in dev only
-    const base64Url = token.split('.')[1];
-    const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-    const jsonPayload = decodeURIComponent(atob(base64).split('').map(c =>
-    '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
-    return JSON.parse(jsonPayload);
-}
-
-function handleCredentialResponse(response) {
-    // response.credential is the ID token (JWT)
-    const idToken = response.credential;
-    const payload = parseJwt(idToken);
-
-    // Show some info (for dev). In prod, POST this idToken to your backend and verify it server-side.
-    document.getElementById('profile').textContent =
-    `ID token payload:\n${JSON.stringify(payload, null, 2)}`;
-    document.getElementById('signOutBtn').style.display = 'inline-block';
-}
-
-if (signInButton){
-    signInButton.addEventListener("click", () => {
-        window.location.href = 'sign-in.html';
-
-        // Initialize Google Sign-In
-        google.accounts.id.initialize({
-            client_id: CLIENT_ID,
-            callback: handleCredentialResponse
+async function refreshToken() {
+    try {
+        const response = await fetch('https://opc-backend-i4tf.onrender.com/auth/refresh', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${localStorage.getItem('refresh_token')}`,
+            },
         });
-        // Render the button
-        google.accounts.id.renderButton(
-            document.getElementById('g_id_signin'),
-            { type: 'standard', theme: 'filled_blue', size: 'large', shape: 'rectangular', text: 'signin_with', logo_alignment: 'left' }  // customization
-        );
+        const data = await response.json();
+        if (data.status_code == 200) {
+            localStorage.setItem('access_token', data.access_token);
+            localStorage.setItem('token_type', data.token_type);
+            return 200;
+        }
+        else {
+            return 0;
+        }
 
-    });
-}
-
-if (closeSignIn){
-closeSignIn.addEventListener("click", () => {
-    signInComponent.style.display = "none";
-});
-}
-
-
-if (signInComponent){
-window.addEventListener("click", (event) => {
-    if (event.target === signInComponent) {
-        signInComponent.style.display = "none";
+    } catch (error) {
+        return 0;
     }
-});
 }
 
-if(signUpButton) {
+async function updateSignIn() {
+    try {
+        const signIn = document.getElementById("sign-in");
+        const user = fetch('https://opc-backend-i4tf.onrender.com/auth/me', {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${localStorage.getItem('access_token')}`,
+            },
+        })
+        const data = await (await user).json();
+        if (data.status_code == 200) {
+            signIn.innerHTML = `
+                <img src="assets/images/user.png" style="border-radius: 50%; width: 3rem; height: auto;">
+                <i class='bx  bx-arrow-right-stroke' style="font-size: 1.5rem; color: rgba(255, 235, 59, 0.7); text-shadow: 0 0 15px rgba(255, 235, 59, 0.3);"></i>
+            `;
+            signIn.style.display = "flex";
+            signIn.style.flexDirection = "row";
+            signIn.style.justifyContent = "center";
+            signIn.style.alignItems = "center"; 
+            signIn.style.cursor = "pointer";
+            signIn.style.gap = "0.5rem";
 
-signUpButton.addEventListener("click", () => {
-    signUpComponent.style.display = "flex";
-});
-}
+            signIn.addEventListener("click", () => {
+                window.location.href = 'dashboard.html';
+            });
 
-if (closeSignUp && signInComponent) {
-closeSignUp.addEventListener("click", () => {
-    signUpComponent.style.display = "none";
-});
-}
-
-if (signUpComponent){
-// click outside to close
-window.addEventListener("click", (event) => {
-    if (event.target === signUpComponent) {
-        signUpComponent.style.display = "none";
+            return 200;
+        }
+        else {
+            return 0;
+        }
     }
-});
+    catch (error) {}
 }
 
-if (signInAgainButton) {
-signInAgainButton.addEventListener("click", () => {
-    signUpComponent.style.display = "none";
-});
+async function initializeHeader() {
+    if (localStorage.getItem('access_token')) {
+        const response = await updateSignIn();
+        if (!response) {
+            if (localStorage.getItem('refresh_token')) {
+                const refreshResponse = await refreshToken();
+                if (!refreshResponse) {
+                    await updateSignIn();
+                }
+            }
+        }
+    }
 }
+
+initializeHeader();
