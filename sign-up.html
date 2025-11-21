@@ -75,26 +75,27 @@
         </section>
         <section id="sign-up-form">
             <div id="title">Sign up</div>
-            <form action="" method="">
-                <select name="user-type" id="user-type">
+            <form>
+                <select name="user_type" id="user-type">
                     <option value="" disabled selected>Select User Type *</option>
                     <option value="creator">Creator</option>
                     <option value="brand">Brand</option>
                     <option value="event-partner">Event Partner</option>
                 </select>
                 <div class="input-box">
-                    <input type="email" id="email" placeholder="" required />
+                    <input type="username" name="username" id="username" placeholder="" required />
+                    <label for="username">Username *</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" placeholder="" required />
                     <label for="email">Email *</label>
                 </div>
                 <div class="input-box">
-                    <input type="text" id="phone-number" placeholder="" required />
+                    <input type="text" name="phone_number" id="phone-number" placeholder="" maxlength="10" required />
                     <label for="phone-number">Phone Number *</label>
                 </div>
-                <div class="input-inliners">
-                    <span>Receive OTP for verification on <input type="checkbox" id="email-preference" required /><label for="email-preference">Email</label>- OR -<input type="checkbox" id="phone-preference" required /><label for="phone-preference">Phone</label></span>
-                </div>
                 <div class="input-box">
-                    <input type="password" id="password" placeholder="" required />
+                    <input type="password" name="password" id="password" placeholder="" required />
                     <label for="password">Password *</label>
                     <span><i class='bx  bx-eye' id="show-password-checkbox"></i></span>
                 </div>
@@ -106,7 +107,7 @@
                     <input type="checkbox" id="terms-and-conditions" required />
                     <label for="terms-and-conditions">I agree to the <a href="#">Terms and Conditions</a> *</label>
                 </div>
-                <button type="submit" id="sign-up-btn">SIGN UP <i class='bx  bx-arrow-right-stroke'  ></i></button>
+                <button type="button" id="sign-up-btn">SIGN UP <i class='bx  bx-arrow-right-stroke'  ></i></button>
                 <div id="sign-in-hint">
                     <span>Already have an account? </span><a href="./sign-in.html">Sign In <i class='bx  bx-arrow-right-stroke'  ></i></a>
                 </div>
@@ -214,7 +215,7 @@
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/vertical-links.js"></script>
-    <script src="./assets/js/sign-up.js"></script>
+    <script type="module" src="./assets/js/sign-up.js"></script>
     <script src="./assets/js/footer.js"></script>
 </body>
 </html>

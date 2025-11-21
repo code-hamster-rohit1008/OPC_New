@@ -17,6 +17,7 @@
     <title>OPC | OTP Validation</title>
 </head>
 <body>
+
     <!-- Header Section Start -->
      <header>
         <nav>
@@ -74,11 +75,11 @@
             </div>
         </section>
         <section id="otp-form">
-            <div id="title"><span class="otp-title"></span> Verification</div>
+            <div id="title">Email Verification</div>
             <div id="otp-description">
-                <span>Please enter the One Time Password (OTP) sent to your <span class="otp-title"></span> to verify your identity and complete the sign in process.</span>
+                <span>Please enter the One Time Password (OTP) sent to your email to verify your identity and complete the sign in process.</span>
             </div>
-            <form action="" method="">
+            <form>
                 <div class="input-box">
                     <input type="text" required maxlength="1"/>
                     <input type="text" required maxlength="1"/>
@@ -87,12 +88,11 @@
                     <input type="text" required maxlength="1"/>
                     <input type="text" required maxlength="1"/>
                 </div>
-                <div class="extras">
-                    <span id="resend-otp">Resend OTP: <span class="timer">00:30</span></span>
-                    <span id="validity">Validity: <span class="timer">00:30</span></span>
-                </div>
                 <div>
                     <button type="submit" id="verify-otp-button">VERIFY OTP <i class='bx  bx-arrow-right-stroke'  ></i></button>
+                </div>
+                <div class="extras">
+                    *Please retry from previous step if you didn't receive the OTP.<br>It is added for security purposes.
                 </div>
             </form>
         </section>
@@ -198,7 +198,7 @@
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/vertical-links.js"></script>
-    <script src="./assets/js/otp.js"></script>
+    <script type="module" src="./assets/js/otp.js"></script>
     <script src="./assets/js/footer.js"></script>
 </body>
 </html>

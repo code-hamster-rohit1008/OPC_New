@@ -50,6 +50,15 @@ nav div a {
     filter: drop-shadow(0 0 0.625rem rgba(255, 235, 59, 0.3)) sepia(1) saturate(6) hue-rotate(-20deg) brightness(0.9);
 }
 
+#sign-in {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem; /* 8px -> rem */
+    cursor: pointer;
+}
+
 #sign-in button {
     font-size: 0.9375rem; /* 15px */
     line-height: 1.25rem; /* 20px */

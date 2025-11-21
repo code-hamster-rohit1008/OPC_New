@@ -119,6 +119,7 @@
     line-height: 3rem;
     font-family: 'Montserrat', sans-serif;
     color: rgba(255, 235, 59, 0.8);
+    text-transform: capitalize;
 }
 
 #otp-form #otp-container {
@@ -187,10 +188,34 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     font-size: 0.875rem;
     line-height: 0.875rem;
     font-family: 'Montserrat', sans-serif;
     color: rgba(204, 198, 192, 1);
+    text-align: center;
+}
+
+.not-shown {
+    display: none !important;
+}
+
+#loading-spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    background: rgba(255, 235, 59, 0.5);
+}
+
+#loading-spinner .spinner img {
+    width: 20rem;
+    height: auto;
 }

@@ -79,7 +79,7 @@
             <span id="title">
                 Event details
             </span>
-            <form action="" method="">
+            <form>
                 <div class="input-box">
                     <input type="text" id="event-name" name="event-name" placeholder="" required />
                     <label for="event-name">Event Name *</label>
@@ -104,15 +104,15 @@
                 </div>
                 <div class="input-inliners">
                     <div class="input-box">
-                        <input type="text" id="poc-details" name="poc-details" placeholder="" required />
-                        <label for="poc-details">POC Name *</label>
+                        <input type="text" id="poc-name" name="poc-name" placeholder="" required />
+                        <label for="poc-name">POC Name *</label>
                     </div>
                     <div class="input-box">
-                        <input type="tel" id="poc-email" name="poc-email" placeholder="" required />
-                        <label for="poc-email">POC Phone Number *</label>
+                        <input type="tel" id="poc-phone" name="poc-phone" placeholder="" required />
+                        <label for="poc-phone">POC Phone Number *</label>
                     </div>
                 </div>
-                <button type="submit">REGISTER EVENT <i class='bx  bx-arrow-right-stroke'  ></i></button>
+                <button type="submit" id="register-event-submit-btn">REGISTER EVENT <i class='bx  bx-arrow-right-stroke'  ></i></button>
             </form>
         </div>
      </section>
@@ -216,7 +216,7 @@
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/vertical-links.js"></script>
-    <script src="./assets/js/register-event.js"></script>
+    <script type="module" src="./assets/js/register-event.js"></script>
     <script src="./assets/js/footer.js"></script>
 </body>
 </html>
