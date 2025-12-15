@@ -59,7 +59,7 @@ async function sendOtpToServer(otp) {
                     document.cookie = `accessToken=${data.access_token}; ${cookieOptions}`;
                     document.cookie = `refreshToken=${data.refresh_token}; ${cookieOptions}`;
                     document.cookie = `tokenType=${data.token_type}; ${cookieOptions}`;
-                    window.location.href = 'https://www.dashboard.theowncollab.com/';
+                    window.location.href = 'https://dashboard.theowncollab.com/';
                 }
                 else if (data.status_code == 400) {
                     alert(data.message);
