@@ -95,6 +95,14 @@ input:-webkit-autofill:active {
     box-shadow: 0 0 0 30px rgba(134, 124, 36) inset !important;
 }
 
+footer #footer-bottom a {
+    color: rgba(255, 235, 59, 0.7);
+}
+
+footer #footer-bottom a:hover {
+    color: rgba(255, 235, 59, 1);
+}
+
 @media screen and (max-width: 1280px) and (min-width: 1080px) {
     html {
         font-size: 75% !important;
