@@ -44,7 +44,7 @@ async function changePage() {
     const data = await response.json()
     console.log(data);
     if (data.status_code == 200) {
-      window.location.href = 'http://127.0.0.1:5000/';
+      window.location.href = 'https://www.dashboard.theowncollab.com/';
     }
     else {
       return 0;
