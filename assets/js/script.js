@@ -189,6 +189,7 @@ function alert(message) {
     text-transform: uppercase;
     font-size: 0.9rem;
     outline: none;
+    margin: 0 auto;
   `;
 
   // Add hover effect listeners
